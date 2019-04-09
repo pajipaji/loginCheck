@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript" src = "checkLogin.js">
+	
+	
+</script>
+</head>
+<body>
+	<form action="register.jsp" > <!-- onsubmit="return check() -->
+		<!-- //return true 才会跳转 -->
+		<table border="1" width="500px" height="500px">
+			<tr>
+				<td colspan="2" align="center">注册</td>
+			</tr>
+			<tr>
+				<td align="right">用户名：</td>
+				<td align="left"><input type="text" id="username" onblur = "checkUserName(this)"/><!-- onblur = ""失去焦点时校验 --> <font
+					color="red" id="um"></font></td>
+
+			</tr>
+			<tr>
+				<td align="right">邮箱：</td>
+				<td align="left"><input type="text" id="email" onblur = "checkEmail(this)"/> <font
+					color="red" id="em"></font></td>
+			</tr>
+			<tr>
+				<td align="right">密码：</td>
+				<td align="left"><input type="password" id="password" onblur = "checkPassword(this)"/> <font
+					color="red" id="pm"></font></td>
+			</tr>
+			<tr>
+				<td align="right">重复密码：</td>
+				<td align="left"><input type="password" id="repassword" onblur = "checkRepassword(this)"/> <font
+					color="red" id="rpm"></font></td>
+			</tr>
+			<tr>
+				<td colspan="2" align="center"><input type="submit" value="注册"
+					name="massage" /></td>
+			</tr>
+		</table>
+	</form>
+</body>
+</html>
